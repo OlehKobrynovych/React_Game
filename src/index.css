@@ -1,0 +1,78 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 100%;
+  background: #ccc;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+.item--red {
+  /* background: red; */
+}
+
+.item--red::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  border: 5px solid red;
+  border-radius: 50%;
+}
+
+.item--blue {
+  /* background: blue; */
+}
+
+.item--blue::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 70px;
+  height: 5px;
+  background-color: blue;
+}
+
+.item--blue::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 70px;
+  height: 5px;
+  background-color: blue;
+}
+
+.winer {
+  font-size: 24px;
+}
