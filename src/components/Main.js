@@ -32,6 +32,7 @@ function Main() {
     const restart = () => {
         dispatch({type:'SET_RESTART_ITEMS'})
         setWiner(null)
+        setWarning(null)
     }
 
     useEffect(()=>{
