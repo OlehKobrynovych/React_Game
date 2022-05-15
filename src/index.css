@@ -31,6 +31,10 @@ body {
   border: 1px solid #000;
 }
 
+.item:hover {
+  background: cornsilk;
+}
+
 .item--red {
   /* background: red; */
 }
@@ -76,3 +80,15 @@ body {
 .winer {
   font-size: 24px;
 }
+
+.restartBtn {
+  width: 100px;
+  height: 33px;
+  margin: 10px;
+}
+
+.warningText {
+  color: rgb(211, 66, 66);
+}
+
+
